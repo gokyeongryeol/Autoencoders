@@ -25,17 +25,36 @@ Please download the datasets and save into 'MODEL_DIRECTORY/data/' as a preparat
   - [report](./DenoisingAE/DenoisingAE.pdf)
   - [reproduction](./DenoisingAE/DenoisingAE.ipynb)
   
+  Filter plot by increasing corruption rate (0% -> 25% -> 50%)
+  
+  <img src='./DenoisingAE/plots/filter_plot/filters_0.png' width="256">
+  <img src='./DenoisingAE/plots/filter_plot/filters_25.png' width="256">
+  <img src='./DenoisingAE/plots/filter_plot/filters_50.png' width="256">
+  
 - K-sparse Autoencoder (ICLR 2014)
   - Paper link : https://arxiv.org/pdf/1312.5663.pdf
   - Main idea : exploiting only K largest activations as a way of sparse coding
   - [report](./KsparseAE/KsparseAE.pdf)
   - [reproduction](./KsparseAE/KsparseAE.ipynb)
+
+  Filter plot by increasing corruption rate (10% -> 25% -> 40% -> 70%)
+
+  <img src='./KsparseAE/plots/filters_10.png' width="768">
+  <img src='./KsparseAE/plots/filters_25.png' width="768">
+  <img src='./KsparseAE/plots/filters_40.png' width="768">
+  <img src='./KsparseAE/plots/filters_70.png' width="768">
  
 - Variational Autoencoder (ICLR 2014)
   - Paper link : https://arxiv.org/pdf/1312.6114.pdf
   - Main idea : inferring the latent variable in generative process by autoencoder
   - [report](./VariationalAE/VariationalAE.pdf)
   - [reproduction](./VariationalAE/VariationalAE.ipynb)  
+
+  Latent space of MNIST and FreyFace datasets.
+  By traversing each axis, the images changes in monotonical manner.
+
+  <img src='./VariationalAE/plots/Bernoulli/latent_spaces.png' height="384">
+  <img src='./VariationalAE/plots/Gaussian/latent_spaces.png' height="384">
 
 - Stick-Breaking Variational Autoencoder (ICLR 2017)
   - Paper link : https://arxiv.org/pdf/1605.06197.pdf
@@ -47,4 +66,12 @@ Please download the datasets and save into 'MODEL_DIRECTORY/data/' as a preparat
   - Paper link : https://openreview.net/pdf?id=Sy2fzU9gl
   - Main idea : constraining the value of the regularization term for interpretability
   - [report](./BetaVAE/BetaVAE.pdf)
-  - [reproduction-dSprites](./BetaVAE/BetaVAE(shapes).ipynb), [reproduction-CelebA](./BetaVAE/BetaVAE(celeba).ipynb), 
+  - [reproduction-dSprites](./BetaVAE/BetaVAE(shapes).ipynb), [reproduction-CelebA](./BetaVAE/BetaVAE(celeba).ipynb)
+
+  Latent traverse of CelebA dataset. (Left) direction, (Right) hair color
+  
+  <img src='./BetaVAE/plots/Gaussian/BetaVAE/Mu_estimation/Latent_traverse(direction).png' height="256">
+  <img src='./BetaVAE/plots/Gaussian/BetaVAE/Mu_estimation/Latent_traverse(hair).png' height="256">
+  
+  
+  
