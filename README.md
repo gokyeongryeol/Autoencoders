@@ -37,7 +37,7 @@ Please download the datasets and save into 'MODEL_DIRECTORY/data/' as a preparat
   - [report](./KsparseAE/KsparseAE.pdf)
   - [reproduction](./KsparseAE/KsparseAE.ipynb)
 
-  Filter plot by increasing corruption rate (10% -> 25% -> 40% -> 70%)
+  Filter plot by increasing the number of activated units (10 -> 25 -> 40 -> 70)
 
   <img src='./KsparseAE/plots/filters_10.png' width="768">
   <img src='./KsparseAE/plots/filters_25.png' width="768">
